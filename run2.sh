@@ -1,4 +1,4 @@
-tool=neato
+tool=dot
 echo "copmmande à utiliser=$tool"
 for a in *.dot;
 do
