@@ -1,12 +1,4 @@
-name: graphes
-on: [push]
-jobs:
-build:
-runs-on: ubuntu-latest
-steps:
-- name: Installation de graphviz
-run: sudo ...
-- name: Check out repository code
-uses: actions/checkout@v3
-- name: Lancement graphviz
-run: ./NOM-SCRIPT.sh g1
+#tool=dot
+tool=neato
+$tool -Tpng $1.dot >$1.png
+$tool -Tsvg $1.dot >$1.svg
